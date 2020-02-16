@@ -71,9 +71,8 @@ body {
     font-weight: 700;
     letter-spacing: 17.5px;
 
-    animation-name: moveInRight;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
+    /* shorthand */
+    animation: moveInRight 2s ease-out;
 }
 
 /* @keyframes name */
@@ -102,7 +101,7 @@ body {
     0% {
         opacity: 0;
         /* neg value from left, pos  val --> from the right */
-        transform: translateX(15x);
+        transform: translateX(100px);
     }
     75% {
         /* pos value --> goes to the right */
@@ -112,6 +111,6 @@ body {
     100% {
         opacity: 1;
         /* translate(0) --> what it looks like w/o any animation */
-        transform: translate(100);
+        transform: translate(0);
     }
 }
