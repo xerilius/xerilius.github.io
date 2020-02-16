@@ -43,6 +43,7 @@ body {
     color: #ffffff;
     text-transform: uppercase;
 }
+
 /* Heading title */
 .heading-primary-main {
     /*  by default span is inline element (like text) */
@@ -50,11 +51,67 @@ body {
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 35px;
+
+    /* animation-name & animation-duration --> the only 2 properties required for animation to work */
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+
+    animation-timing-function: ease-out;
+
+    /* optional  */
+    /* repeats 3 times */
+    /* animation-iteration-count: 3;  */
+    /* animation-delay: 3s; */
 }
+
 /* Heading subtext */
 .heading-primary-sub {
     display: block;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 17.5px;
+
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+/* @keyframes name */
+
+@keyframes moveInLeft {
+    /* start of animation */
+    0% {
+        opacity: 0;
+        /* neg value from left, pos  val --> from the right */
+        transform: translateX(-100px);
+    }
+    75% {
+        /* pos value --> goes to the right */
+        transform: translateX(15px);
+    }
+    /* end of animation */
+    100% {
+        opacity: 1;
+        /* translate(0) --> what it looks like w/o any animation */
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    /* start of animation */
+    0% {
+        opacity: 0;
+        /* neg value from left, pos  val --> from the right */
+        transform: translateX(15x);
+    }
+    75% {
+        /* pos value --> goes to the right */
+        transform: translateX(-15px);
+    }
+    /* end of animation */
+    100% {
+        opacity: 1;
+        /* translate(0) --> what it looks like w/o any animation */
+        transform: translate(100);
+    }
 }
