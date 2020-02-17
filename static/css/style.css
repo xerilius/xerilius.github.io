@@ -42,6 +42,9 @@ body {
 .heading-primary {
     color: #ffffff;
     text-transform: uppercase;
+
+    /* prevents animation from moving up */
+    backface-visibility: hidden;
 }
 
 /* Heading title */
