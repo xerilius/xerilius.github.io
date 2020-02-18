@@ -17,13 +17,12 @@ html {
     /* default browser font size is 16px */
     /* font-size: 10px; */
      /* 10/16 = .625 */
-     font-size: 62.5%
+     font-size: 62.5%;
 }
 
 body {
     font-family: sans-serif;
-    font-weight: 400;
-    font-size: 1.6rem;
+    font-weight: 400; 
     line-height: 1.7;
     color: #777;
     /* padding: 30px */
