@@ -1,3 +1,7 @@
+$color-primary: #38009255;
+$color-primary-light: rgba(213, 181, 232, 0.192);
+
+
 /*  universal selector - selects all elements on the page  */
 /* normalizing - start clean */
 *,
@@ -6,8 +10,7 @@
     margin: 0;
     padding: 0;
     /* forcing inheritance */
-    box-sizing: inherit;
-    
+    box-sizing: inherit;   
 }
  
 html {
@@ -34,8 +37,8 @@ body {
     height: 95vh;
     background-image: linear-gradient(
         to right bottom,
-        rgba(213, 181, 232, 0.192),
-        #38009255),
+        ($color-primary-light,
+        $color-primary),
         url(../img/hero.jpg);
     /* cover -> width of element will fit the size of viewport */
     background-size: cover;
