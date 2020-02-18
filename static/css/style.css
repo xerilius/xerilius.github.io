@@ -45,7 +45,7 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 }
 
-.text-box {
+.header__text-box {
     position: absolute;
     /* top & bottom in relation to the parent */
     top: 40%;
@@ -64,7 +64,7 @@ body {
 }
 
 /* Heading title */
-.heading-primary-main {
+.heading-primary--main {
     /*  by default span is inline element (like text) */
     display: block;
     font-size: 6rem;
@@ -84,7 +84,7 @@ body {
 }
 
 /* Heading subtext */
-.heading-primary-sub {
+.heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
