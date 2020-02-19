@@ -1,0 +1,39 @@
+/* Heading title */
+/* @keyframes name */
+@keyframes moveInLeft {
+    /* start of animation */
+    0% {
+        opacity: 0;
+        /* neg value from left, pos  val --> from the right */
+        transform: translateX(-10rem);
+    }
+    75% {
+        /* pos value --> goes to the right */
+        transform: translateX(1.5rem);
+    }
+    /* end of animation */
+    100% {
+        opacity: 1;
+        /* translate(0) --> what it looks like w/o any animation */
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    /* start of animation */
+    0% {
+        opacity: 0;
+        /* neg value from left, pos  val --> from the right */
+        transform: translateX(10rem);
+    }
+    75% {
+        /* pos value --> goes to the right */
+        transform: translateX(-1.5rem);
+    }
+    /* end of animation */
+    100% {
+        opacity: 1;
+        /* translate(0) --> what it looks like w/o any animation */
+        transform: translate(0);
+    }
+}

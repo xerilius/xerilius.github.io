@@ -1,0 +1,26 @@
+// /*  universal selector - selects all elements on the page  */
+// /* normalizing - start clean */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    /* forcing inheritance */
+    box-sizing: inherit;   
+}
+ 
+html {
+    /* 1 rem = root font size - adjust all the other font sizes*/
+    /* root fontsize -- which is in the html selector */
+    /* bad practice to set font-size to px */
+    /* default browser font size is 16px */
+    /* font-size: 10px; */
+     /* 10/16 = .625 */
+    //   this defines what 1rem is
+     font-size: 62.5%; 
+     // this acts like an overall setting therefore not in typography
+}
+
+body {
+    box-sizing: border-box;
+}
