@@ -46,15 +46,17 @@ body {
     position: relative;
 
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-}
 
-.header__text-box {
-    position: absolute;
-    /* top & bottom in relation to the parent */
-    top: 40%;
-    left: 50%;
-    /* in relation to the element itself */
-    transform: translate(-50%, -50%)
+
+    // .header__text-box
+    &__text-box {
+        position: absolute;
+        /* top & bottom in relation to the parent */
+        top: 40%;
+        left: 50%;
+        /* in relation to the element itself */
+        transform: translate(-50%, -50%)
+    }
 }
 
 .heading-primary {
@@ -64,39 +66,42 @@ body {
 
     /* prevents animation from moving up */
     backface-visibility: hidden;
+
+    // .heading-primary--main
+    &--main {
+        /*  by default span is inline element (like text) */
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+    
+        /* animation-name & animation-duration --> the only 2 properties required for animation to work */
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+    
+        animation-timing-function: ease-out;
+    
+        /* optional  */
+        /* repeats 3 times */
+        /* animation-iteration-count: 3;  */
+        /* animation-delay: 3s; */
+    }
+    
+    /* Heading subtext */
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+        
+    
+        /* shorthand */
+        animation: moveInRight 2s ease-out;
+    }
 }
 
 /* Heading title */
-.heading-primary--main {
-    /*  by default span is inline element (like text) */
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
 
-    /* animation-name & animation-duration --> the only 2 properties required for animation to work */
-    animation-name: moveInLeft;
-    animation-duration: 2s;
-
-    animation-timing-function: ease-out;
-
-    /* optional  */
-    /* repeats 3 times */
-    /* animation-iteration-count: 3;  */
-    /* animation-delay: 3s; */
-}
-
-/* Heading subtext */
-.heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    
-
-    /* shorthand */
-    animation: moveInRight 2s ease-out;
-}
 
 /* @keyframes name */
 
