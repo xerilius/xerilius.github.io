@@ -160,11 +160,42 @@ body {
     transform: scale(0.95); }
 
 .card {
-  background-color: skyblue;
-  height: 50rem;
-  transition: all 1s; }
-  .card:hover {
-    transform: rotateY(180deg); }
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relatve;
+  height: 50rem; }
+  .card__side {
+    background-color: #fff;
+    color: #fff;
+    height: 50rem;
+    transition: all 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+    overflow: hidden; }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      background-color: skyblue;
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, skyblue, #8a75ff); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: overlay;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card__picture--1 {
+      background-image: linear-gradient(to right bottom, skyblue, #8a75ff), url(../img/game-on.jfif); }
 
 .header {
   height: 95vh;
@@ -173,6 +204,7 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); }
   .header__text-box {
     position: absolute;

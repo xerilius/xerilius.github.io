@@ -1,12 +1,77 @@
-.card {
-    background-color: skyblue;
-    height: 50rem;
+.card { // PARENT
+    // perspective - lower val --> dramatic effect 
+    // FUNCTIONALITY
+    perspective: 150rem;
+    // for firefox
+    -moz-perspective: 150rem;
+    position: relatve;
+    height: 50rem;  // perspective fix
 
-    // // animation effect 
-    transition: all 1s;
+    &__side {
+        background-color: $color-white;
+        color: $color-white;
+        height: 50rem;
+        // animation effect 
+        transition: all 1s ease;
 
-    &:hover {
+        // stack front&back side ontop of each other
+        // always give parent relative position
+        //  FRONT BACK CARD
+        position: absolute; // removing from natural flow thus parent collapsed and lost height - must specify parent(card) height
+        top: 0;  // card position
+        left: 0; // card position
+        width: 100%;  // width to span the whole area
+        backface-visibility: hidden; // prevent card transparency
+        border-radius: 3px; // round corners
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .8);  //card shadow
+        
+        // image is overflowing parent - hiding rounded  corners
+        overflow: hidden; 
+        
+        // FRONT OF CARD
+        &--front {
+            background-color: $color-white;
+        }
+
+        // BACK OF CARD
+        &--back { 
+            // already rotated @ 180 deg
+            background-color: skyblue;
+            transform: rotateY(180deg);
+
+            
+            &-1 {
+                // CARD 1 BACK COLOR
+                background-image: linear-gradient(to right bottom,
+                $color-secondary-light, $color-secondary-dark);
+            }
+        }
+    }
+    // .card:hover  then .card__side will transform 
+    &:hover &__side--front {
         // rotates on the Y-axis
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    // FRONT SIDE STYLING
+    &__picture {
+        background-size: cover; // for all images
+        height: 23rem;
+        // blend 
+        background-blend-mode: overlay;
+        
+        -webkit-clip-path: polygon(0 0, 100% 0,  100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0,  100% 85%, 0 100%);
+       
+        
+        &--1 {
+            // from the CSS folder
+            background-image: linear-gradient(to right bottom,
+            $color-secondary-light, $color-secondary-dark), url(../img/game-on.jfif);
+        }
     }
 }
