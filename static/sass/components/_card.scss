@@ -1,0 +1,12 @@
+.card {
+    background-color: skyblue;
+    height: 50rem;
+
+    // // animation effect 
+    transition: all 1s;
+
+    &:hover {
+        // rotates on the Y-axis
+        transform: rotateY(180deg);
+    }
+}
