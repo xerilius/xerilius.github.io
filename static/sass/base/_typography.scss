@@ -57,10 +57,9 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 3.5rem;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 700;
     display: inline-block;
     background-image: linear-gradient(to right,darken($color-primary-light, 55%), $color-primary);
-    letter-spacing: 2px;
     
     // gradient behind text with -webkit- prefi
     // background gets clipped around where the text sits
@@ -68,6 +67,7 @@ body {
     -webkit-background-clip: text;
     // to see gradient, must set text color to transparent
     color: transparent;
+    letter-spacing: .5rem;
     transition: all .2s;
 
     &:hover {
@@ -80,13 +80,16 @@ body {
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: .5rem;
+    margin-top: 5rem;
 }
 
 .paragraph {
+    letter-spacing: .2rem;
     font-size: $default-font-size;
     // make margin after each paragraph except the last one
     &:not(:last-child) {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 
 }
