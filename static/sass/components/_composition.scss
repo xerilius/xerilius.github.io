@@ -1,0 +1,55 @@
+.composition {
+    // image container
+    // needed for position: absolute;
+    position: relative;
+
+    &__photo {
+        // always in % - to scale with viewport
+        width: 50%;
+        background-color: $color-white;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 2px;
+        // stack img ontop of each other
+        // place according to reference -- first parent
+        position: absolute;
+
+        z-index: 10;
+        // animation effect
+        transition: all .2s;
+        
+        outline-offset: 2rem;
+
+        &--p1 {
+            left: 0;
+            // move upwards
+            top: -2rem;
+        }
+
+        &--p2 {
+            // 0px from the right side
+            right: -2rem;
+            top: 2rem;
+        }
+
+        &--p3 {
+            // %
+            left: 20%;
+            top: 15rem;
+        }
+
+        &:hover {
+            outline: 1.5rem solid $color-purple;
+            transform: scale(1.05) translateY(-.5rem);
+            // increase shadow when zoom in
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            // overlap other img
+            z-index: 20;
+        }
+
+    }
+
+    &:hover &__photo:not(:hover) {
+        transform: scale(.95);
+    }
+    //composition:hover composition__photo:not(:hover) {
+}
