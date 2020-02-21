@@ -10,6 +10,7 @@
     &__side {
         background-color: $color-white;
         color: $color-white;
+        // card height
         height: 50rem;
         // animation effect 
         transition: all 1s ease;
@@ -63,7 +64,7 @@
         height: 23rem;
         // blend 
         background-blend-mode: overlay;
-        
+
         -webkit-clip-path: polygon(0 0, 100% 0,  100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0,  100% 85%, 0 100%);
        
@@ -72,6 +73,54 @@
             // from the CSS folder
             background-image: linear-gradient(to right bottom,
             $color-secondary-light, $color-secondary-dark), url(../img/game-on.jfif);
+        }
+    }
+
+    // CARD HEADING
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $color-white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        text-align: right;
+        width: 75%
+    }
+
+    // new element 
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        // aligns the heading title- removes space at end -  1 elements in 2 box both styled in same way
+        // applies all declaration to all the selector toall boxes in element
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85))
+        }
+    }
+
+    &__details {
+        padding: 3rem;
+        color: $color-black;
+
+        ul {
+           list-style: none;
+            width: 80%;
+            // center block element in block
+             margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+                
+                &:not(:last-child) {
+                    border-bottom: 1px solid #eee;
+                }
+            }
         }
     }
 }
