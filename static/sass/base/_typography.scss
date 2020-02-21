@@ -75,3 +75,18 @@ body {
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2)
     }
 }
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    // make margin after each paragraph except the last one
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
+}
