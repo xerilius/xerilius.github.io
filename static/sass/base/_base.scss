@@ -10,29 +10,27 @@
 }
  
 html {
-    /* 1 rem = root font size - adjust all the other font sizes*/
-    /* root fontsize -- which is in the html selector */
-    /* bad practice to set font-size to px */
-    /* default browser font size is 16px */
-    /* font-size: 10px; */
-     /* 10/16 = .625 */
-    //   this defines what 1rem is
-     font-size: 62.5%; 
-     // this acts like an overall setting therefore not in typography
+    /* 1 rem = root font size - adjust all the other font sizes
+     root fontsize -- which is in the html selector 
+     bad practice to set font-size to px 
+     default browser font size is 16px 
+     font-size: 10px; 
+     10/16 = .625 */
 
-    
-     @include respond(phone) {
-         
-        font-size:50%;
-    }
+    //   this defines what 1rem is
+    // this acts like an overall setting therefore not in typography
+     font-size: 62.5%; // 1 rem = 10px ; 10px/16px = 62.5%
+
+    // breakpoints
+   
     @include respond(tab-port) {
-        font-size:60%;
+        font-size:50%; // if 1rem = 8px; then 8/16px = 50%
     }
     @include respond(tab-land) {
-        font-size:70%;
+        font-size:56.25%;  // 1rem = 9px ; then 9/16 
     }
     @include respond(big-desktop) {
-        font-size:80%;
+        font-size: 75%;
     }
 
 }
