@@ -60,12 +60,15 @@ html {
      font-size: 10px; 
      10/16 = .625 */
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
   @media (max-width: 75em) {
     html {
-      font-size: 56.25%; } }
+      font-size: 36%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -236,7 +239,9 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(135, 206, 235, 0.85), rgba(138, 117, 255, 0.85)); }
+      font-family: 'Permanent Marker', sans-serif;
+      color: #ffc107;
+      background-image: linear-gradient(to right bottom, rgba(135, 206, 235, 0.5), rgba(138, 117, 255, 0.5)); }
   .card__details {
     padding: 3rem;
     color: #000; }
