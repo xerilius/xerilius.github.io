@@ -28,11 +28,11 @@ html {
     }
 
     @include respond(tab-port) { // width < 600 ?
-        font-size: 40%; // if 1rem = 8px; then 8/16px = 50%
+        font-size: 53%; // if 1rem = 8px; then 8/16px = 50%
     }
 
     @include respond(phone) { // 600
-        font-size: 40%;
+        font-size: 47%;
     }
 
     @include respond(big-desktop) {

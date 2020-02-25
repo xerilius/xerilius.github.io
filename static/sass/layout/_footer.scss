@@ -1,3 +1,29 @@
 .footer {
-    background-color: $color-grey;
+    background-color: #eeee;
+    padding: 10rem 0;
+    font-size: 1.4rem;
+    
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+
+    &__link {
+        img {
+            width: 7rem;
+            height: auto;
+        }
+     
+    }
+
+ 
+    
 }
