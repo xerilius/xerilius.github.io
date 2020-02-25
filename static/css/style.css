@@ -257,6 +257,8 @@ body {
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, skyblue, #8a75ff); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, rgba(56, 0, 146, 0.452), #684da7); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -271,10 +273,13 @@ body {
     border-top-right-radius: 3px; }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, skyblue, #8a75ff), url(../img/game-on.jfif); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #684da7, #684da7), url(../img/map.jpg);
+      background-position: center;
+      background-blend-mode: soft-light; }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
-    text-transform: uppercase;
     color: #fff;
     position: absolute;
     top: 12rem;
@@ -289,6 +294,11 @@ body {
       font-family: 'Permanent Marker', sans-serif;
       color: #ffc107;
       background-image: linear-gradient(to right bottom, rgba(135, 206, 235, 0.5), rgba(138, 117, 255, 0.5)); }
+    .card__heading-span--2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff;
+      font-weight: 200;
+      background-image: linear-gradient(to right bottom, rgba(213, 181, 232, 0.192), #684da7); }
   .card__details {
     padding: 3rem;
     color: #000; }

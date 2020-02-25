@@ -48,6 +48,11 @@
                 $color-secondary-light, $color-secondary-dark);
             }
 
+            &-2 {
+                background-image: linear-gradient(to right bottom,
+                $color-primary, $color-purple);
+            }
+
             // &-2 {
             //     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
             // }
@@ -89,6 +94,13 @@
             $color-secondary-light, $color-secondary-dark), url(../img/game-on.jfif);
         }
 
+        &--2 {
+            background-image: linear-gradient(to right bottom,
+            $color-purple, $color-purple), url(../img/map.jpg);
+            background-position: center;
+            background-blend-mode: soft-light;
+        }
+
         // &--2 {
         //     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
         //     url(../img/nat-6.jpg);
@@ -104,7 +116,7 @@
     &__heading {
         font-size: 2.8rem;
         font-weight: 300;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         color: $color-white;
         position: absolute;
         top: 12rem;
@@ -125,6 +137,14 @@
             font-family: 'Permanent Marker', sans-serif;
             color: $color-yellow;
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .5), rgba($color-secondary-dark, .5));
+        }
+
+        &--2 {
+            font-family: 'Playfair Display', serif;
+            color: $color-white;
+            font-weight: 200;
+            background-image: linear-gradient(to right bottom,
+            $color-primary-light, $color-purple);
         }
         
         // &--2 {
