@@ -118,3 +118,16 @@ body {
     }
 
 }
+
+.footer {
+    text-align: center;
+    font-size: 1.4rem;
+    
+    &__header {
+        font-size: 3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .5rem; 
+        color: $color-black;
+    }
+}

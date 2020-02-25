@@ -162,6 +162,16 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 2rem; }
 
+.footer {
+  text-align: center;
+  font-size: 1.4rem; }
+  .footer__header {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: #000; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -438,15 +448,22 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .footer {
-  background-color: #eeee;
-  padding: 10rem 0;
-  font-size: 1.4rem; }
+  background-color: rgba(213, 181, 232, 0.192);
+  padding: 20rem 0; }
   .footer__list {
-    list-style: none; }
+    list-style: none;
+    margin: 0 auto;
+    width: 100%; }
   .footer__item {
-    display: inline-block; }
+    display: inline-block;
+    width: 7rem; }
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
+  .footer__header {
+    border-top: 5px solid #000;
+    padding-top: 2rem;
+    display: inline-block;
+    width: 100%; }
   .footer__link img {
     width: 7rem;
     height: auto; }
