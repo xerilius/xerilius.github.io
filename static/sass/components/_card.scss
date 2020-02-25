@@ -1,4 +1,5 @@
-.card { // PARENT
+.card { 
+    // PARENT
     // perspective - lower val --> dramatic effect 
     // FUNCTIONALITY
     perspective: 150rem;
@@ -37,7 +38,7 @@
         // BACK OF CARD
         &--back { 
             // already rotated @ 180 deg
-            background-color: skyblue;
+            // background-color: skyblue;
             transform: rotateY(180deg);
 
             
@@ -46,6 +47,14 @@
                 background-image: linear-gradient(to right bottom,
                 $color-secondary-light, $color-secondary-dark);
             }
+
+            // &-2 {
+            //     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+            // }
+
+            // &-3 {
+            //     background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+            // }
         }
     }
 
@@ -79,6 +88,16 @@
             background-image: linear-gradient(to right bottom,
             $color-secondary-light, $color-secondary-dark), url(../img/game-on.jfif);
         }
+
+        // &--2 {
+        //     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
+        //     url(../img/nat-6.jpg);
+        // }
+
+        // &--3 {
+        //     background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
+        //     url(../img/nat-7.jpg);
+        // }
     }
 
     // CARD HEADING
@@ -107,6 +126,18 @@
             color: $color-yellow;
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .5), rgba($color-secondary-dark, .5));
         }
+        
+        // &--2 {
+        //     background-image: linear-gradient(to right bottom, 
+        //     rgba($color-primary-light, .85), 
+        //     rgba($color-primary-dark, .85));
+        // }
+
+        // &--3 {
+        //     background-image: linear-gradient(to right bottom, 
+        //     rgba($color-tertiary-light, .85), 
+        //     rgba($color-tertiary-dark, .85));
+        // }
     }
 
     &__details {
@@ -125,7 +156,7 @@
                 padding: 1rem;
                 
                 &:not(:last-child) {
-                    border-bottom: 1px solid #eee;
+                    border-bottom: 1px solid $color-grey-light-2;
                 }
             }
         }
@@ -138,11 +169,12 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+        width: 90%;
     }
 
     &__text-box {
         text-align: center;
-        color: white;
+        color: $color-white;
         margin-bottom: 8rem;
     }
 

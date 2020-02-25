@@ -17,27 +17,34 @@ html {
      font-size: 10px; 
      10/16 = .625 */
 
-    //   this defines what 1rem is
+    //  this defines what 1rem is
     // this acts like an overall setting therefore not in typography
-     font-size: 62.5%; // 1 rem = 10px ; 10px/16px = 62.5%
+    font-size: 62.5%; // 1 rem = 10px ; 10px/16px = 62.5%
 
-    // breakpoints
-   
+    // BREAKPOINTS
+    // desktop first approach
     @include respond(tab-land) { // width < 900?
         font-size: 56.25%;  // 1rem = 9px ; then 9/16 
     }
+
     @include respond(tab-port) { // width < 600 ?
         font-size: 50%; // if 1rem = 8px; then 8/16px = 50%
     }
-    @include respond(phone) {
-        font-size: 36%;
-    }
-    @include respond(big-desktop) {
-        font-size: 75%; //1rem = 12, 12/16
+
+    @include respond(phone) { // 600
+        font-size: 40%;
     }
 
+    @include respond(big-desktop) {
+        font-size: 70%; //1rem = 12, 12/16
+    }
 }
 
 body {
     box-sizing: border-box;
+    padding: 3rem; 
+
+    @include respond(tab-port) {
+        padding: 0!important;
+    } 
 }

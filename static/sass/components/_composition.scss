@@ -7,8 +7,8 @@
     &__photo {
         // always in % - to scale with viewport
         width: 50%;
-        background-color: $color-white;
-        box-shadow: 1.5rem 1.5rem 4rem rgba($color-black, .4);
+        background-color: rgba($color-white, 0.95);
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .7);
         border-radius: 2px;
         // stack img ontop of each other
         // place according to reference -- first parent
@@ -34,16 +34,33 @@
 
         &--p3 {
             // %
-            left: 20%;
+            left: 10%;
             top: 15rem;
         }
-        
+        &--p4 {
+            left: 0;
+            top: 30rem;
+
+        }
+         &--p5 {
+             right: -3rem;
+             top: 26rem;
+         }
+         &--p6 {
+             right: 0;
+             top: 26rem;
+         }
+
+         &--p7 {
+             left: 5rem;
+             top: 30rem;
+         }
         // image border
         &:hover {
             outline: 1.5rem solid $color-purple;
             transform: scale(1.05) translateY(-.5rem);
             // increase shadow when zoom in
-            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .7);
             // overlap other img
             z-index: 20;
         }

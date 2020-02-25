@@ -7,8 +7,8 @@ body {
     font-weight: 400; 
     line-height: 1.7;
     color: #777;
-    /* padding: 30px */
-    padding: 3rem;
+
+    // padding: 3rem; <-- moved to base.scss
     // box-sizing: border-box; <-- moved to base.scss
 }
 
@@ -19,25 +19,32 @@ body {
 
     /* prevents animation from moving up */
     backface-visibility: hidden;
+    margin-bottom: 6rem;
+
 
     // .heading-primary--main
     &--main {
         /*  by default span is inline element (like text) */
         display: block;
         font-size: 6rem;
-        font-weight: 700;
+        font-weight: 400;
         letter-spacing: 3.5rem;
     
         /* animation-name & animation-duration --> the only 2 properties required for animation to work */
         animation-name: moveInLeft;
         animation-duration: 2s;
-    
         animation-timing-function: ease-out;
     
         /* optional  */
         /* repeats 3 times */
         /* animation-iteration-count: 3;  */
         /* animation-delay: 3s; */
+
+        // PHONE MAIN HEADING
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-size: 4rem;
+        }
     }
     
     /* Heading subtext */
@@ -50,6 +57,13 @@ body {
     
         /* shorthand */
         animation: moveInRight 2s ease-out;
+
+        // PHONE SUBHEADING
+        @include respond(phone) {
+            letter-spacing: .5rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
     }
 }
 
@@ -70,6 +84,16 @@ body {
     color: transparent;
     letter-spacing: .5rem;
     transition: all .2s;
+
+    
+    // TAB-PORT
+    @include respond(tab-port) {
+        font-size: 3.5rem;
+    }
+    // PHONE
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
 
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
