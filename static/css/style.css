@@ -76,10 +76,10 @@ html {
   font-size: 62.5%; }
   @media (max-width: 75em) {
     html {
-      font-size: 44%; } }
+      font-size: 50%; } }
   @media (max-width: 56.25em) {
     html {
-      font-size: 53%; } }
+      font-size: 45%; } }
   @media (max-width: 32.5em) {
     html {
       font-size: 47%; } }
@@ -311,6 +311,8 @@ body {
         background-image: linear-gradient(to right bottom, skyblue, #8a75ff); }
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, rgba(56, 0, 146, 0.452), #684da7); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, rgba(104, 77, 167, 0.9), rgba(255, 192, 203, 0.8)); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {

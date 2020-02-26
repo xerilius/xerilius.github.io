@@ -53,13 +53,11 @@
                 $color-primary, $color-purple);
             }
 
-            // &-2 {
-            //     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-            // }
-
-            // &-3 {
-            //     background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
-            // }
+            &-3 {
+                background-image: linear-gradient(to right bottom, 
+                rgba($color-purple, .9), 
+                rgba($color-pink, .8));
+            }
         }
     }
 
@@ -107,8 +105,8 @@
         // }
 
         // &--3 {
-        //     background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
-        //     url(../img/nat-7.jpg);
+        // background-image: linear-gradient(to right bottom, rgba($color-purple, .9), rgba(pink, .8));, 
+        // url(../img/nat-7.jpg);
         // }
     }
 
@@ -147,16 +145,10 @@
             $color-primary-light, $color-purple);
         }
         
-        // &--2 {
-        //     background-image: linear-gradient(to right bottom, 
-        //     rgba($color-primary-light, .85), 
-        //     rgba($color-primary-dark, .85));
-        // }
-
         // &--3 {
         //     background-image: linear-gradient(to right bottom, 
-        //     rgba($color-tertiary-light, .85), 
-        //     rgba($color-tertiary-dark, .85));
+        //     rgba($color-purple, .9), 
+        //     rgba($color-pink, .8));;
         // }
     }
 
