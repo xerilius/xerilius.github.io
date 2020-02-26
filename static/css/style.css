@@ -46,6 +46,18 @@ Base & Typography --> General Layout & Grid  --> Page Layout --> Components
     /* translate(0) --> what it looks like w/o any animation */
     transform: translate(0); } }
 
+@keyframes rave {
+  0% {
+    background-color: #9281ef; }
+  25% {
+    background-color: #6c2db4; }
+  50% {
+    background-color: #00adfdfb; }
+  75% {
+    background-color: #ff93c5; }
+  100% {
+    background-color: #9281ef; } }
+
 *,
 *::before,
 *::after {
@@ -165,14 +177,18 @@ body {
     margin-bottom: 2rem; }
 
 .footer {
-  text-align: center;
-  font-size: 1.4rem; }
+  text-align: center; }
   .footer__header {
     font-size: 3rem;
-    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .5rem;
-    color: #000; }
+    animation-name: rave;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.397); }
 
 .u-center-text {
   text-align: center !important; }
@@ -494,7 +510,7 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .footer {
-  background-color: #f2defd;
+  background-image: linear-gradient(to right top, #f2defd, #684da7);
   padding: 2rem 0 5rem 0;
   margin-top: -10rem;
   z-index: 1000;

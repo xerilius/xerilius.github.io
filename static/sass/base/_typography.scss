@@ -126,13 +126,22 @@ body {
 
 .footer {
     text-align: center;
-    font-size: 1.4rem;
+
+    
     
     &__header {
         font-size: 3rem;
-        font-weight: 700;
         text-transform: uppercase;
         letter-spacing: .5rem; 
-        color: $color-black;
+        animation-name: rave;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        // // text outline
+        -webkit-text-stroke: .5px rgba(0, 0, 0, 0.397);
+
+        
     }
 }
