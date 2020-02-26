@@ -106,16 +106,21 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .5rem;
-    margin-top: 5rem;
+    // make margin-top after all heading except first one
+    &:not(:first-child) {
+        margin-top: 5rem;
+    }
 }
 
 .paragraph {
     letter-spacing: .2rem;
     font-size: $default-font-size;
+    margin-bottom: .5rem;
     // make margin after each paragraph except the last one
     &:not(:last-child) {
         margin-bottom: 2rem;
     }
+    
 
 }
 

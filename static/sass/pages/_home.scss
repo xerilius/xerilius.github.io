@@ -1,6 +1,6 @@
 .section-about {
     background-color: $color-grey-light-1;
-    padding: 25rem 0;
+    padding: 25rem 0 28rem 0;
     // 95vh - 75% = 20 vh
     // neg number thus moves up
     margin-top: -20vh; 
@@ -12,7 +12,8 @@
 
 .section-projects {
     // section dimension
-    padding: 20rem 0;
+    z-index: 0;
+    padding: 15rem 0 23rem 0;
     margin-top: -10rem;
     background-image: linear-gradient(
         to right bottom,
@@ -28,6 +29,6 @@
     }
     
     @include respond(tab-port) {
-        padding: 10rem 0;
+        padding: 10rem 0 15rem 0;
     }
 }

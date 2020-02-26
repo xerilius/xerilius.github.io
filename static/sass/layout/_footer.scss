@@ -1,7 +1,9 @@
 .footer {
-    background-color: $color-primary-light;
-    padding: 10rem 0;
+    background-color: $color-purple-light;
+    padding: 2rem 0 5rem 0;
     margin-top: -10rem;
+    z-index: 1000;
+    position: relative;
     
   
     &__list {

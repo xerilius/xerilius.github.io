@@ -20,41 +20,84 @@
         
         outline-offset: 2rem;
 
+        @include respond(tab-port){
+            float: left;
+            position: relative;
+            width: 33.33333%;
+            box-shaddow: 0 1.5rem 3rem rgba($color-black, .1);
+        }
+
         &--p1 {
             left: 0;
             // move upwards
             top: -2rem;
+      
+
+            @include respond(tab-port) {
+                top: 0;
+
+            }
         }
 
         &--p2 {
             // 0px from the right side
             right: -2rem;
             top: 2rem;
+
+            @include respond(tab-port) {
+                top: 0;
+            }
         }
 
         &--p3 {
             // %
             left: 10%;
             top: 15rem;
+
+            @include respond(tab-port) {
+                top: 0;
+            }
         }
+
         &--p4 {
             left: 0;
             top: 30rem;
 
+            @include respond(tab-port) {
+                top: 0;
+            }
+
         }
+
          &--p5 {
              right: -3rem;
              top: 26rem;
+
+             @include respond(tab-port) {
+                top: 0;
+            }
          }
+
          &--p6 {
              right: 0;
              top: 26rem;
+
+             @include respond(tab-port) {
+                top: 0;
+            }
          }
+
 
          &--p7 {
              left: 5rem;
              top: 30rem;
+
+             @include respond(tab-port) {
+                top: 0;
+                left: 0;
+            }
          }
+
         // image border
         &:hover {
             outline: 1.5rem solid $color-purple;
@@ -63,6 +106,10 @@
             box-shadow: 0 2.5rem 4rem rgba($color-black, .7);
             // overlap other img
             z-index: 20;
+
+            @include respond(tab-port) {
+                outline: 1rem solid $color-purple;
+            }
         }
 
     }
