@@ -1,9 +1,13 @@
 .footer {
-    background-image: linear-gradient(to right top, $color-purple-light, $color-purple);
+    padding: 10rem 0 20rem 0;
+    background-image: linear-gradient(
+        to left top,
+        #280e51,
+        #392c6a);
     padding: 2rem 0 5rem 0;
-    margin-top: -10rem;
-    z-index: 1000;
-    position: relative;
+    // margin-top: -10rem;
+    // z-index: 10;
+    // position: relative;
 
 
   

@@ -133,7 +133,7 @@
         &--1 {
             font-family: 'Permanent Marker', sans-serif;
             color: $color-yellow;
-            background: rgba(lighten($color-blue, 10%), 0.9);
+            background: rgba($color-blue, 0.3);
         }
 
         &--2 {
