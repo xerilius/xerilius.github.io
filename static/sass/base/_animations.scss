@@ -38,10 +38,31 @@
     }
 }
 
-@keyframes rave {
-    0%   {background-color: #9281ef;}
-    25%  {background-color:#6c2db4;}
-    50%  {background-color: #00adfdfb;}
-    75%  {background-color: #ff93c5;}
-    100% {background-color: #9281ef;}
+@keyframes glow {
+    // 0%   {background-color: #9281ef;}
+    // 25%  {background-color:#6c2db4;}
+    // 50%  {background-color: #00adfdfb;}
+    // 75%  {background-color: #ff93c5;}
+    // 100% {background-color: #9281ef;}
+ 
+    0% {
+        text-shadow: 1px 1px 5px yellow;
+        color:black;
+    }
+    55% {
+        text-shadow:  1px 1px 5px blue;
+        color:black;
+    }
+    50% { 
+        text-shadow:  1px 1px 5px green;
+        color:black;
+    }
+    75% {
+        text-shadow:  1px 1px 5px red;
+        color:black;
+    }
+    100% {
+        text-shadow:  1px 1px 5px purple;
+        color:black;
+    }
 }

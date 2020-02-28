@@ -45,22 +45,22 @@
             &-1 {
                 // CARD 1 BACK COLOR
                 background-image: linear-gradient(to right bottom,
-                $color-secondary-light, $color-secondary-dark);
+                $color-pink, lighten($color-blue, 20%));
             }
 
             &-2 {
-                background-image: linear-gradient(to right bottom,
-                $color-primary, $color-purple);
+                background-image: linear-gradient(to left bottom,
+                lighten($color-blue, 35%), $color-purple);
             }
 
             &-3 {
-                background-image: linear-gradient(to right bottom, 
+                background-image: linear-gradient(to left top, 
                 rgba($color-purple, .9), 
                 rgba($color-pink, .8));
             }
         }
     }
-
+    
     // .card:hover  then .card__side will transform 
     &:hover &__side--front {
         // rotates on the Y-axis
@@ -99,16 +99,15 @@
             background-blend-mode: soft-light;
         }
 
-        // &--2 {
-        //     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
-        //     url(../img/nat-6.jpg);
-        // }
-
-        // &--3 {
-        // background-image: linear-gradient(to right bottom, rgba($color-purple, .9), rgba(pink, .8));, 
-        // url(../img/nat-7.jpg);
-        // }
+        &--3 {
+        background-image: linear-gradient(to right bottom, 
+            rgba($color-purple, .9), 
+            rgba(pink, .8));
+    
+        }
     }
+    
+
 
     // CARD HEADING
     &__heading {
@@ -117,10 +116,10 @@
         // text-transform: uppercase;
         color: $color-white;
         position: absolute;
-        top: 12rem;
+        top: 10rem;
         right: 2rem;
         text-align: right;
-        width: 75%
+        width: 75%;
     }
 
     // new element 
@@ -134,22 +133,24 @@
         &--1 {
             font-family: 'Permanent Marker', sans-serif;
             color: $color-yellow;
-            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .5), rgba($color-secondary-dark, .5));
+            background: rgba(lighten($color-blue, 10%), 0.9);
         }
 
         &--2 {
-            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
             color: $color-white;
-            font-weight: 200;
-            background-image: linear-gradient(to right bottom,
-            $color-primary-light, $color-purple);
+            font-weight: 700;
+            background: rgba($color-purple, .9);
         }
         
-        // &--3 {
-        //     background-image: linear-gradient(to right bottom, 
-        //     rgba($color-purple, .9), 
-        //     rgba($color-pink, .8));;
-        // }
+        &--3 {
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: 2rem;
+            text-transform: uppercase;
+            text-align: center!important;
+
+        }
     }
 
     &__details {

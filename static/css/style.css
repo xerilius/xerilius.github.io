@@ -46,17 +46,22 @@ Base & Typography --> General Layout & Grid  --> Page Layout --> Components
     /* translate(0) --> what it looks like w/o any animation */
     transform: translate(0); } }
 
-@keyframes rave {
+@keyframes glow {
   0% {
-    background-color: #9281ef; }
-  25% {
-    background-color: #6c2db4; }
+    text-shadow: 1px 1px 5px yellow;
+    color: black; }
+  55% {
+    text-shadow: 1px 1px 5px blue;
+    color: black; }
   50% {
-    background-color: #00adfdfb; }
+    text-shadow: 1px 1px 5px green;
+    color: black; }
   75% {
-    background-color: #ff93c5; }
+    text-shadow: 1px 1px 5px red;
+    color: black; }
   100% {
-    background-color: #9281ef; } }
+    text-shadow: 1px 1px 5px purple;
+    color: black; } }
 
 *,
 *::before,
@@ -118,6 +123,7 @@ body {
     animation-name: moveInLeft;
     animation-duration: 2s;
     animation-timing-function: ease-out;
+    /* animation: <animation name> | <second> | ease | infinite ; */
     /* optional  */
     /* repeats 3 times */
     /* animation-iteration-count: 3;  */
@@ -177,18 +183,18 @@ body {
     margin-bottom: 2rem; }
 
 .footer {
-  text-align: center; }
+  text-align: center;
+  font-weight: 1000; }
   .footer__header {
     font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: .5rem;
-    animation-name: rave;
+    animation-name: glow;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     color: transparent;
     -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.397); }
+    background-clip: text; }
 
 .u-center-text {
   text-align: center !important; }
@@ -308,11 +314,11 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, skyblue, #8a75ff); }
+        background-image: linear-gradient(to right bottom, pink, #66b5ff); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, rgba(56, 0, 146, 0.452), #684da7); }
+        background-image: linear-gradient(to left bottom, #b3daff, #684da7); }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, rgba(104, 77, 167, 0.9), rgba(255, 192, 203, 0.8)); }
+        background-image: linear-gradient(to left top, rgba(104, 77, 167, 0.9), rgba(255, 192, 203, 0.8)); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -331,12 +337,14 @@ body {
       background-image: linear-gradient(to right bottom, #684da7, #684da7), url(../img/map.jpg);
       background-position: center;
       background-blend-mode: soft-light; }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, rgba(104, 77, 167, 0.9), rgba(255, 192, 203, 0.8)); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
     color: #fff;
     position: absolute;
-    top: 12rem;
+    top: 10rem;
     right: 2rem;
     text-align: right;
     width: 75%; }
@@ -347,12 +355,18 @@ body {
     .card__heading-span--1 {
       font-family: 'Permanent Marker', sans-serif;
       color: #ffc107;
-      background-image: linear-gradient(to right bottom, rgba(135, 206, 235, 0.5), rgba(138, 117, 255, 0.5)); }
+      background: rgba(51, 157, 255, 0.9); }
     .card__heading-span--2 {
-      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
       color: #fff;
-      font-weight: 200;
-      background-image: linear-gradient(to right bottom, rgba(213, 181, 232, 0.192), #684da7); }
+      font-weight: 700;
+      background: rgba(104, 77, 167, 0.9); }
+    .card__heading-span--3 {
+      text-align: center;
+      font-weight: 700;
+      letter-spacing: 2rem;
+      text-transform: uppercase;
+      text-align: center !important; }
   .card__details {
     padding: 3rem;
     color: #000; }

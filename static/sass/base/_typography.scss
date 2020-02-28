@@ -22,8 +22,6 @@ body {
     margin-bottom: 6rem;
 
 
-
-
     // .heading-primary--main
     &--main {
         /*  by default span is inline element (like text) */
@@ -36,6 +34,9 @@ body {
         animation-name: moveInLeft;
         animation-duration: 2s;
         animation-timing-function: ease-out;
+
+
+        /* animation: <animation name> | <second> | ease | infinite ; */
     
         /* optional  */
         /* repeats 3 times */
@@ -128,6 +129,7 @@ body {
 
 .footer {
     text-align: center;
+    font-weight: 1000;
 
     
     
@@ -135,14 +137,15 @@ body {
         font-size: 3rem;
         text-transform: uppercase;
         letter-spacing: .5rem; 
-        animation-name: rave;
+
+        animation-name: glow;
         animation-duration: 20s;
         animation-iteration-count: infinite;
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
         // // text outline
-        -webkit-text-stroke: .5px rgba(0, 0, 0, 0.397);
+        // -webkit-text-stroke: .5px rgba(0, 0, 0, 0.397);
 
         
     }
