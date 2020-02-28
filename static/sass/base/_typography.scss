@@ -130,23 +130,37 @@ body {
 .footer {
     text-align: center;
     font-weight: 1000;
-
-    
-    
+ 
     &__header {
-        font-size: 3rem;
-        text-transform: uppercase;
-        letter-spacing: .5rem; 
+        // font-size: 3rem;
+        // text-transform: uppercase;
+        // letter-spacing: .5rem; 
 
-        animation-name: glow;
-        animation-duration: 20s;
-        animation-iteration-count: infinite;
-        color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
+        // animation-name: glow;
+        // animation-duration: 20s;
+        // animation-iteration-count: infinite;
+        // color: transparent;
+        // -webkit-background-clip: text;
+        // background-clip: text;
         // // text outline
         // -webkit-text-stroke: .5px rgba(0, 0, 0, 0.397);
 
-        
-    }
+        font: 5rem "Pacifico";
+        color: #fee;
+        // initial state
+        text-shadow: 0 -40px 100px, 
+            0 0 2px, 
+            0 0 1em #9f6bff,
+            0 0 .3em #9f6bff,
+            0 0 0.1em #9f6bff, 
+            0 10px 3px #000;
+
+        b span {
+            animation: blink linear infinite 2s;
+
+            &:nth-type(2) {
+                animation: blink linear infinite 3s;   
+            }
+        }
+    }    
 }
