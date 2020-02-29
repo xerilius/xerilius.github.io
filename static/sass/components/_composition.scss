@@ -27,41 +27,39 @@
             box-shaddow: 0 1.5rem 3rem rgba($color-black, .1);
         }
 
-        &--p1 {
+        &--p1 { //py
             left: 0;
             // move upwards
             top: -2rem;
-      
 
             @include respond(tab-port) {
                 top: 0;
-
             }
         }
 
-        &--p2 {
+        &--p2 { // js
             // 0px from the right side
-            right: -2rem;
-            top: 2rem;
+            right: 30%;
+            top: -2rem;
 
             @include respond(tab-port) {
                 top: 0;
             }
         }
 
-        &--p3 {
+        &--p3 { // react
             // %
-            left: 10%;
-            top: 15rem;
+            right: 30%;
+            top: 11rem;
 
             @include respond(tab-port) {
                 top: 0;
             }
         }
 
-        &--p4 {
-            left: 0;
-            top: 30rem;
+        &--p4 { // html
+            right: 0;
+            top: -2rem;
 
             @include respond(tab-port) {
                 top: 0;
@@ -69,18 +67,18 @@
 
         }
 
-         &--p5 {
-             right: -3rem;
-             top: 26rem;
-
-             @include respond(tab-port) {
-                top: 0;
-            }
-         }
-
-         &--p6 {
+         &--p5 { //css
              right: 0;
-             top: 26rem;
+             top: 11rem;
+
+             @include respond(tab-port) {
+                top: 0;
+            }
+         }
+
+         &--p6 { // sass
+             right: 0;
+             top: 23rem;
 
              @include respond(tab-port) {
                 top: 0;
@@ -88,15 +86,52 @@
          }
 
 
-         &--p7 {
-             left: 5rem;
-             top: 30rem;
+         &--p7 { // bootstrap
+            right: 0;
+             top: 35rem;
 
              @include respond(tab-port) {
                 top: 0;
                 left: 0;
             }
          }
+
+         &--p8 {
+            left: 0;
+            top: 11.5rem;
+         }
+
+         &--p9 {
+             left: 0;
+             top: 23rem;
+         }
+
+
+         &--p10 {
+             right: 30%;
+             top: 25rem;
+         }
+         
+         &--p11 {
+             left:0;
+             top: 37rem;
+         }
+
+         &--p12 {
+             left:0;
+             top: 50rem;
+         }
+
+         &--p13 {
+             right: 30%;
+             top: 37rem;
+         }
+
+         &--p16 {
+             right: 30%;
+             top: 50rem;
+         }
+
 
         // image border
         &:hover {
