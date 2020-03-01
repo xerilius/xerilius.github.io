@@ -253,13 +253,15 @@ body {
       top: -2rem; }
       @media (max-width: 56.25em) {
         .composition__photo--p2 {
-          top: 0; } }
+          top: 0;
+          right: 0; } }
     .composition__photo--p3 {
       right: 30%;
       top: 11rem; }
       @media (max-width: 56.25em) {
         .composition__photo--p3 {
-          top: 0; } }
+          top: 0;
+          left: 0; } }
     .composition__photo--p4 {
       right: 0;
       top: -2rem; }
@@ -288,24 +290,50 @@ body {
     .composition__photo--p8 {
       left: 0;
       top: 11.5rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p8 {
+          top: 2r0rem;
+          left: 33%; } }
     .composition__photo--p9 {
       left: 0;
       top: 23rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p9 {
+          top: 0; } }
     .composition__photo--p10 {
       right: 30%;
       top: 25rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p10 {
+          top: -15rem;
+          right: 33%; } }
     .composition__photo--p11 {
       left: 0;
       top: 37rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p11 {
+          top: -15rem; } }
     .composition__photo--p12 {
       left: 0;
       top: 50rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p12 {
+          top: -5rem; } }
     .composition__photo--p13 {
       right: 30%;
       top: 37rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p13 {
+          top: -5rem;
+          right: 66%; } }
     .composition__photo--p16 {
       right: 30%;
       top: 50rem; }
+      @media (max-width: 56.25em) {
+        .composition__photo--p16 {
+          top: -26rem;
+          right: 0;
+          left: 34%; } }
     .composition__photo:hover {
       outline: 1.5rem solid #684da7;
       transform: scale(1.05) translateY(-0.5rem);

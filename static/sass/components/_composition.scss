@@ -43,7 +43,9 @@
             top: -2rem;
 
             @include respond(tab-port) {
+
                 top: 0;
+                right:0;
             }
         }
 
@@ -54,6 +56,7 @@
 
             @include respond(tab-port) {
                 top: 0;
+                left: 0;
             }
         }
 
@@ -96,40 +99,81 @@
             }
          }
 
-         &--p8 {
+         &--p8 { // flask
             left: 0;
             top: 11.5rem;
+
+            @include respond(tab-port) {
+                top: 2r0rem;
+                left: 33%;
+            }
+
          }
 
-         &--p9 {
+         &--p9 { // jinja
              left: 0;
              top: 23rem;
+
+             @include respond(tab-port) {
+                top: 0;
+            }
+
          }
 
 
-         &--p10 {
+         &--p10 { // jquery
              right: 30%;
              top: 25rem;
+
+             @include respond(tab-port) {
+                top: -15rem;
+                right: 33%;
+            }
+
          }
          
-         &--p11 {
+         &--p11 { ///postgres
              left:0;
              top: 37rem;
+
+             @include respond(tab-port) {
+                top: -15rem;
+            }
+
          }
 
          &--p12 {
              left:0;
              top: 50rem;
+
+             @include respond(tab-port) {
+                top: -5rem;
+
+            }
+
          }
 
          &--p13 {
              right: 30%;
              top: 37rem;
+
+             @include respond(tab-port) {
+                top: -5rem;
+                right: 66%;
+            }
+
          }
 
          &--p16 {
              right: 30%;
              top: 50rem;
+
+             @include respond(tab-port) {
+                top: -26rem;
+                right: 0;
+                left: 34%;
+            }
+
          }
 
 
