@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.doodle {
+
+    &--1 {
+        text-align: center;
+        color: $color-primary;
+        font-family: 'Pacifico', cursive;
+        font-size: 90px;
+        font-weight: 500;
+        line-height: 90px;
+        letter-spacing: 15px;
+        text-shadow: 0 1px #efefef,
+            0 2px 0 #efefef,
+            0 3px 0 #efefef,
+            0 4px 0 #efefef,
+            2px 30px 5px rgba(0,0,0,.1);
+
+        animation: hello 3s linear infinite;
+        animation-direction: alternate;
+    }
+}

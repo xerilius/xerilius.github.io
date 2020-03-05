@@ -15,6 +15,7 @@ $breakpoint argument choices:
 Base & Typography --> General Layout & Grid  --> Page Layout --> Components
 */
 /* @keyframes name */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url(//fonts.googleapis.com/css?family=Pacifico&display=swap);
 @keyframes moveInLeft {
   /* start of animation */
@@ -69,6 +70,12 @@ Base & Typography --> General Layout & Grid  --> Page Layout --> Components
   92.5% {
     color: inherit;
     text-shadow: inherit; } }
+
+@keyframes hello {
+  from {
+    transform: rotate(5deg); }
+  to {
+    transform: rotate(-5deg); } }
 
 *,
 *::before,
@@ -548,6 +555,18 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
+
+.doodle--1 {
+  text-align: center;
+  color: rgba(56, 0, 146, 0.452);
+  font-family: 'Pacifico', cursive;
+  font-size: 90px;
+  font-weight: 500;
+  line-height: 90px;
+  letter-spacing: 15px;
+  text-shadow: 0 1px #efefef, 0 2px 0 #efefef, 0 3px 0 #efefef, 0 4px 0 #efefef, 2px 30px 5px rgba(0, 0, 0, 0.1);
+  animation: hello 3s linear infinite;
+  animation-direction: alternate; }
 
 .header {
   height: 95vh;
