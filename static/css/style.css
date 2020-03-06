@@ -599,7 +599,7 @@ body {
 .doodle--3 #1 {
   stroke-dasharray: -2;
   stroke-dashoffset: 2;
-  animation: hello .6 linear forwards; }
+  animation: write .6 linear forwards; }
 
 .header {
   height: 95vh;
@@ -677,6 +677,17 @@ body {
     margin-top: 3.5rem; }
     .footer__item:not(:last-child) {
       margin-right: 2rem; }
+    .footer__item .linkedin-outline, .footer__item .linkedin-in {
+      transform-origin: 50% 50%;
+      transition: 300ms all;
+      fill: #f2defd; }
+    .footer__item .linkedin:hover .linkedin-outline {
+      transform: scale(0); }
+    .footer__item .linkedin:hover .linkedin-in {
+      transform: scale(2);
+      stroke: #f2defd;
+      fill: #f2defd;
+      opacity: 0; }
   .footer__header {
     border-top: 5px solid #000;
     padding-top: 2rem;

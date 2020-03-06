@@ -27,6 +27,33 @@
             margin-right: 2rem;
         }
 
+
+        .linkedin-outline, .linkedin-in {    
+            transform-origin: 50% 50%;
+            transition: 300ms all;
+            fill: $color-purple-light;
+        }
+
+       .linkedin:hover {
+           .linkedin-outline {
+                transform: scale(0);
+           }
+           
+           .linkedin-in {
+               transform: scale(2);
+                stroke: $color-purple-light;
+                fill: $color-purple-light; 
+                opacity: 0;
+                 
+           }
+          
+        
+           // drop-shadow can only be applied directly to svg element
+        // svg:hover {
+        //     filter: drop-shadow(12px 12px 7px white);  
+        // }
+           
+        }
     }
     
     &__header {
