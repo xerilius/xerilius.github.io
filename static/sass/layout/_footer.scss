@@ -37,24 +37,43 @@
        .linkedin:hover {
            .linkedin-outline {
                 transform: scale(0);
-           }
-           
+           } 
            .linkedin-in {
                transform: scale(2);
                 stroke: $color-purple-light;
                 fill: $color-purple-light; 
-                opacity: 0;
-                 
+                opacity: 0;      
            }
-          
-        
-           // drop-shadow can only be applied directly to svg element
-        // svg:hover {
-        //     filter: drop-shadow(12px 12px 7px white);  
-        // }
-           
         }
-    }
+
+        .github-outline, .github-inner, .github-detail {
+            transform-origin: 50% 50%;
+            transition: 300ms all;
+        }
+
+        .github-detail {
+            opacity: 0;
+        }
+
+        .github:hover {
+            .github-outline {
+                transform: scale(.5);
+                opacity: 0;
+            }
+
+            .github-detail {
+                opacity: 1;
+                transform: scale(0.8) rotate(180deg);
+
+            }
+        }
+
+        
+ // drop-shadow can only be applied directly to svg element
+     // svg:hover {
+     //     filter: drop-shadow(12px 12px 7px white);  
+     // }
+    } // end of &__item
     
     &__header {
         border-top: 5px solid $color-black;
