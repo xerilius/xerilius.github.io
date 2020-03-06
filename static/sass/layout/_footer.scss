@@ -22,9 +22,11 @@
         width: 7rem;
         margin-top: 3.5rem;
         
+     
         &:not(:last-child) {
-            margin-right: 1.5rem;
+            margin-right: 2rem;
         }
+
     }
     
     &__header {
@@ -35,19 +37,4 @@
 
     }
 
-    &__link {
-        img {
-            width: 7rem;
-            height: auto;
-        }
-
-        // &:hover,
-        // &:active {
-        //     // box-shadow: 0 1rem 2rem rgba($color-black,.7);
-        // }
-     
-    }
-
- 
-    
 }

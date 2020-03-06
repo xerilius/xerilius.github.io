@@ -18,4 +18,34 @@
         animation: hello 3s linear infinite;
         animation-direction: alternate;
     }
+
+    &--2 {
+        .square-white {
+            // length of dash/outline
+           stroke-dasharray: 1314;
+           // move line
+           stroke-dashoffset: -1314; 
+
+           transform-origin: 50% 50%; // rotate from center
+           animation: draw-square-white 3s infinite;
+        }
+
+        .square-purple {
+            stroke-dasharray: 1282;
+            stroke-dashoffset: -1282;
+
+            transform-origin: 50% 50%; // rotate from center
+            animation: draw-square-purple 3s infinite;
+        }
+    }
+     &--3 { 
+         #1 {
+             stroke-dasharray: -2;
+             stroke-dashoffset: 2;
+             animation: hello .6 linear forwards;
+         }
+
+         }
+        
+
 }
