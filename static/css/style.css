@@ -699,6 +699,16 @@ body {
     .footer__item .github:hover .github-detail {
       opacity: 1;
       transform: scale(0.8) rotate(180deg); }
+    .footer__item .email-outline, .footer__item .email-inner, .footer__item .email-inner-circle {
+      transform-origin: 50% 50%;
+      transition: 300ms all; }
+    .footer__item .email:hover .email-outline {
+      transform: scale(1.7); }
+    .footer__item .email:hover .email-inner-circle {
+      fill: #f2defd; }
+    .footer__item .email:hover .email-inner {
+      stroke: #f2defd;
+      fill: #2c1456; }
   .footer__header {
     border-top: 5px solid #000;
     padding-top: 2rem;

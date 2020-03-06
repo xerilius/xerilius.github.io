@@ -68,12 +68,33 @@
             }
         }
 
+
+      
+        .email-outline, .email-inner, .email-inner-circle {
+            transform-origin: 50% 50%;
+            transition: 300ms all;
+        }
+
+        .email:hover {
+            .email-outline {
+                transform: scale(1.7);
+            }
+            .email-inner-circle {
+                fill:#f2defd;
+            }
+            .email-inner {
+                stroke:  $color-purple-light;
+                fill: #2c1456;
+            }
+        }
+
+    }
         
  // drop-shadow can only be applied directly to svg element
      // svg:hover {
      //     filter: drop-shadow(12px 12px 7px white);  
      // }
-    } // end of &__item
+     // end of &__item
     
     &__header {
         border-top: 5px solid $color-black;
