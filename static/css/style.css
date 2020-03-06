@@ -93,10 +93,6 @@ Base & Typography --> General Layout & Grid  --> Page Layout --> Components
     stroke-dashoffset: 0;
     transform: rotate(360deg); } }
 
-@keyframes hello {
-  100% {
-    stroke-dashoffset: 0; } }
-
 *,
 *::before,
 *::after {
