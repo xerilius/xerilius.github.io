@@ -38,14 +38,21 @@
             animation: draw-square-purple 3s infinite;
         }
     }
-     &--3 { 
-         #1 {
-             stroke-dasharray: -2;
-             stroke-dashoffset: 2;
-             animation: write .6 linear forwards;
-         }
+     &--3 {  
+        margin: 0 auto;
+        position: relative;
 
-         }
+        .pepeNorm {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            opacity: 0;
+
+            animation: fade 2s infinite;
+
+        }
+    }
         
 
 }

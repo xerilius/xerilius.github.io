@@ -93,6 +93,21 @@ Base & Typography --> General Layout & Grid  --> Page Layout --> Components
     stroke-dashoffset: 0;
     transform: rotate(360deg); } }
 
+@keyframes fade {
+  0% {
+    opacity: 1;
+    transform: scale(1.1); }
+  17% {
+    opacity: 1;
+    transform: scale(1.1); }
+  25% {
+    opacity: 0; }
+  92% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: scale(1.1); } }
+
 *,
 *::before,
 *::after {
@@ -596,10 +611,16 @@ body {
   transform-origin: 50% 50%;
   animation: draw-square-purple 3s infinite; }
 
-.doodle--3 #1 {
-  stroke-dasharray: -2;
-  stroke-dashoffset: 2;
-  animation: write .6 linear forwards; }
+.doodle--3 {
+  margin: 0 auto;
+  position: relative; }
+  .doodle--3 .pepeNorm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    animation: fade 2s infinite; }
 
 .header {
   height: 95vh;
