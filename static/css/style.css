@@ -618,11 +618,19 @@ body {
   margin: 0 auto;
   position: relative; }
   .doodle--3 .pepeNorm {
-    position: absolute;
     top: 0;
     left: 0;
-    z-index: 10;
-    opacity: 0;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 200px; }
+  .doodle--3 .pepeWink {
+    position: absolute;
+    z-index: 100;
+    width: auto;
+    height: 200px;
+    width: 200px;
     animation: fade 2s infinite; }
 
 .header {
