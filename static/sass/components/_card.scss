@@ -54,9 +54,9 @@
             }
 
             &-3 {
-                background-image: linear-gradient(to left top, 
-                rgba($color-purple, .9), 
-                rgba($color-pink, .8));
+                background-image: linear-gradient(
+                rgba($color-black,.1) 90%,
+                rgba($color-white, .1) 10%), url(../img/brick.jpg);
             }
         }
     }
@@ -101,8 +101,11 @@
 
         &--3 {
         background-image: linear-gradient(to right bottom, 
-            rgba($color-purple, .9), 
-            rgba(pink, .8));
+            rgba($color-black, .2), 
+            rgba($color-black, .5)), url(../img/brick.jpg);
+            background-position: center;
+            background-size: 350%;
+            
     
         }
     }
@@ -144,12 +147,18 @@
         }
         
         &--3 {
+            color: $color-white;
             text-align: center;
-            font-weight: 700;
-            letter-spacing: 2rem;
-            text-transform: uppercase;
-            text-align: center!important;
+            font-weight: 200;
+            font-size: 3.8rem;
+            font-family: 'Pacifico', cursive;
 
+            text-shadow: 0 -40px 100px, 
+                0 0 2px, 
+                0 0 1em  $color-neon-yellow,
+                0 0 .2em  $color-neon-yellow,
+                0 0 0.1em  $color-neon-yellow, 
+                0 15px 3px $color-black;    
         }
     }
 
