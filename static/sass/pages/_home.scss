@@ -43,6 +43,10 @@
     // to overlap other section
     z-index: 100;
     position: relative;
+    
+    @include respond(tab-port) {
+        padding: 10rem 0 15rem 0;
+    }
 
     
 
