@@ -1,14 +1,18 @@
 .section-about {
-    background-color: $color-grey-light-1;
+    // background-color: $color-grey-light-1;
     padding: 25rem 0 38rem 0;
     // 95vh - 75% = 20 vh
     // neg number thus moves up
     margin-top: -20vh; 
-    background-image:$color-white;
+    // // background-image:$color-white;
+    background-image: url(../img/geometric.jpg);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     @include respond(tab-port) {
-        padding: 20rem 0;
+        padding: 30rem 0;
     }
 }
 
@@ -37,8 +41,11 @@
 
 .section-doodles {
     padding: 10rem 0 20rem 0;
-    background-image: url(../img/doodles.jfif);
+    background-image: url(../img/geometric.jpg);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin-top: -10rem;
     // to overlap other section
     z-index: 100;
@@ -47,7 +54,4 @@
     @include respond(tab-port) {
         padding: 10rem 0 15rem 0;
     }
-
-    
-
 }

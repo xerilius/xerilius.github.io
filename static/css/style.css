@@ -748,14 +748,16 @@ body {
     width: 100%; }
 
 .section-about {
-  background-color: #f7f7f7;
   padding: 25rem 0 38rem 0;
   margin-top: -20vh;
-  background-image: #fff;
-  background-size: cover; }
+  background-image: url(../img/geometric.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 20rem 0; } }
+      padding: 30rem 0; } }
 
 .section-projects {
   z-index: 0;
@@ -772,8 +774,14 @@ body {
 
 .section-doodles {
   padding: 10rem 0 20rem 0;
-  background-image: url(../img/doodles.jfif);
+  background-image: url(../img/geometric.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin-top: -10rem;
   z-index: 100;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .section-doodles {
+      padding: 10rem 0 15rem 0; } }
