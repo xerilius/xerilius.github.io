@@ -58,6 +58,9 @@
                 rgba($color-black,.1) 90%,
                 rgba($color-white, .1) 10%), url(../img/brick.jpg);
             }
+            &-4 {
+                background-color: black;
+            }
         }
     }
     
@@ -105,8 +108,10 @@
             rgba($color-black, .5)), url(../img/brick.jpg);
             background-position: center;
             background-size: 350%;
-            
-    
+        }
+
+        &--4 {
+            background-color: black;
         }
     }
     
@@ -159,6 +164,11 @@
                 0 0 .2em  $color-neon-yellow,
                 0 0 0.1em  $color-neon-yellow, 
                 0 15px 3px $color-black;    
+        }
+
+        &--4 {
+            font-family: 'Rock Salt', cursive;
+            color: $color-white;
         }
     }
 
