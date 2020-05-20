@@ -416,7 +416,7 @@ body {
       .card__side--back-5 {
         background-color: #ffd000; }
       .card__side--back-6 {
-        background-color: orange; }
+        background-image: linear-gradient(to right bottom, #df9100, whitesmoke); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
