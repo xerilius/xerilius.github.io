@@ -414,7 +414,7 @@ body {
       .card__side--back-4 {
         background-image: linear-gradient(to left bottom, black 90%, white 10%); }
       .card__side--back-5 {
-        background-image: linear-gradient(black 70%, #ffd000 10%); }
+        background-image: linear-gradient(#ffd000 95%, white 10%); }
       .card__side--back-6 {
         background-image: linear-gradient(to right bottom, #d8d8d8 90%, orange 10%); }
   .card:hover .card__side--front {
