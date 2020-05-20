@@ -412,11 +412,11 @@ body {
       .card__side--back-3 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.1) 90%, rgba(255, 255, 255, 0.1) 10%), url(../img/brick.jpg); }
       .card__side--back-4 {
-        background-color: black; }
+        background-image: linear-gradient(to left bottom, black 90%, white 10%); }
       .card__side--back-5 {
-        background-color: #ffd000; }
+        background-image: linear-gradient(black 70%, #ffd000 10%); }
       .card__side--back-6 {
-        background-image: linear-gradient(to right bottom, #df9100, whitesmoke); }
+        background-image: linear-gradient(to right bottom, #d8d8d8 90%, orange 10%); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {

@@ -59,13 +59,14 @@
                 rgba($color-white, .1) 10%), url(../img/brick.jpg);
             }
             &-4 {
-                background-color: black;
+                background-image: linear-gradient(to left bottom,black 90%,white 10%);
             }
             &-5 {
-                background-color:  $color-neon-yellow;
+                background-image: linear-gradient(black
+               70%,  $color-neon-yellow 10%);
             }
             &-6 {
-                background-image: linear-gradient(to right bottom, rgb(223, 145, 0),whitesmoke);
+                background-image: linear-gradient(to right bottom, #d8d8d8 90%,orange 10%);
             }
 
         }
