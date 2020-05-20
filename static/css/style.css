@@ -413,6 +413,10 @@ body {
         background-image: linear-gradient(rgba(0, 0, 0, 0.1) 90%, rgba(255, 255, 255, 0.1) 10%), url(../img/brick.jpg); }
       .card__side--back-4 {
         background-color: black; }
+      .card__side--back-5 {
+        background-color: #ffd000; }
+      .card__side--back-6 {
+        background-color: orange; }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -437,6 +441,13 @@ body {
       background-size: 350%; }
     .card__picture--4 {
       background-color: black; }
+    .card__picture--5 {
+      background-color: #ffd000; }
+    .card__picture--6 {
+      background-image: linear-gradient(to right bottom, orange, orange), url(../img/crunchyroll-logo.png);
+      background-position: center;
+      background-size: cover;
+      background-blend-mode: hue; }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -469,6 +480,23 @@ body {
     .card__heading-span--4 {
       font-family: 'Rock Salt', cursive;
       color: #fff; }
+    .card__heading-span--5 {
+      font-family: 'Libre Barcode 39 Text', cursive;
+      font-weight: 550;
+      font-size: 5rem;
+      color: black;
+      position: absolute;
+      top: -5rem !important;
+      right: 0rem;
+      line-height: 6rem; }
+    .card__heading-span--6 {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 800;
+      position: absolute;
+      top: -1rem;
+      right: 0rem;
+      color: black;
+      text-transform: uppercase; }
   .card__details {
     padding: 3rem;
     color: #000; }

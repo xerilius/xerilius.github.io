@@ -61,6 +61,13 @@
             &-4 {
                 background-color: black;
             }
+            &-5 {
+                background-color:  $color-neon-yellow;
+            }
+            &-6 {
+                background-color: orange;
+            }
+
         }
     }
     
@@ -112,6 +119,18 @@
 
         &--4 {
             background-color: black;
+        }
+        
+        &--5 {
+            background-color:$color-neon-yellow;
+        }
+
+        &--6 {
+            background-image: linear-gradient(to right bottom, 
+            orange, orange), url(../img/crunchyroll-logo.png);
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: hue;
         }
     }
     
@@ -169,6 +188,26 @@
         &--4 {
             font-family: 'Rock Salt', cursive;
             color: $color-white;
+        }
+
+        &--5 {
+            font-family: 'Libre Barcode 39 Text', cursive;
+            font-weight: 550;
+            font-size: 5rem;
+            color: black;
+            position: absolute;
+            top: -5rem!important;
+            right: 0rem;
+            line-height: 6rem;
+        }
+        &--6 {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 800;
+            position: absolute;
+            top: -1rem;
+            right: 0rem;
+            color:black;
+            text-transform: uppercase;
         }
     }
 
